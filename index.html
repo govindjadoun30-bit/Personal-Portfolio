@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Govind Jadoun | Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -33,28 +35,26 @@
         <!-- Main Section -->
         <main>
 
-
             <!-- About Section -->
             <section id="about">
 
-    <h2>About Me</h2>
+                <h2>About Me</h2>
 
-    <img src="images/profile.jpg"
-         alt="Profile Photo"
-         width="160">
+                <img src="images/profile.jpg"
+                     alt="Profile Photo"
+                     width="160">
 
-    <p>
-        Hello, I am Govind Jadoun. I am a B.Tech Computer Science Engineering
-        student. I am learning Web Development and Java Full Stack Development.
-    </p>
+                <p>
+                    Hello, I am Govind Jadoun. I am a B.Tech Computer Science Engineering
+                    student. I am learning Web Development and Java Full Stack Development.
+                </p>
 
-    <p>
-        I am passionate about improving my programming skills and building
-        websites. My goal is to become a Java Full Stack Developer.
-    </p>
+                <p>
+                    I am passionate about improving my programming skills and building
+                    websites. My goal is to become a Java Full Stack Developer.
+                </p>
 
-</section>
-
+            </section>
 
 
             <!-- Skills Section -->
@@ -73,7 +73,6 @@
             </section>
 
 
-
             <!-- Contact Section -->
             <section id="contact">
 
@@ -83,19 +82,28 @@
 
                     <label>Name</label>
                     <br>
-                    <input type="text" placeholder="Enter your name" required>
+
+                    <input type="text"
+                           placeholder="Enter your name"
+                           required>
 
                     <br><br>
 
                     <label>Email</label>
                     <br>
-                    <input type="email" placeholder="Enter your email" required>
+
+                    <input type="email"
+                           placeholder="Enter your email"
+                           required>
 
                     <br><br>
 
                     <label>Message</label>
                     <br>
-                    <textarea placeholder="Write your message"></textarea>
+
+                    <textarea
+                        placeholder="Write your message"
+                        required></textarea>
 
                     <br><br>
 
@@ -107,9 +115,7 @@
 
             </section>
 
-
         </main>
-
 
 
         <!-- Footer Section -->
@@ -121,9 +127,25 @@
 
         </footer>
 
-
     </div>
 
+
+    <!-- Contact Form JavaScript -->
+    <script>
+
+        const contactForm = document.querySelector("#contact form");
+        const sendButton = contactForm.querySelector("button");
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            sendButton.style.backgroundColor = "#22c55e";
+            sendButton.textContent = "Message Sent ✓";
+
+        });
+
+    </script>
 
 </body>
 
