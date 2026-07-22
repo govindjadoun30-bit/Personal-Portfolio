@@ -1,0 +1,541 @@
+/* ================================
+   RESET DEFAULT STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   COLOR SCHEME
+================================ */
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --dark-color: #0f172a;
+    --text-color: #334155;
+    --light-color: #f8fafc;
+    --white-color: #ffffff;
+}
+
+
+/* ================================
+   GENERAL STYLES
+================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+
+/* ================================
+   HEADER SECTION
+================================ */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb,
+        #38bdf8,
+        #ef4444
+    );
+
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   CONTACT BUTTON
+================================ */
+
+.btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #1e3a8a;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ef4444;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+#about {
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(168, 213, 162, 0.55),
+            rgba(197, 223, 185, 0.55)
+        ),
+        url("images/sky.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #1f3d2b;
+
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about img {
+    display: block;
+
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin: 0 auto 25px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+
+/* Leaves in background */
+
+#about::before {
+    content: "🍃 🌿 🍃 🌿 🍃";
+
+    position: absolute;
+
+    right: 3%;
+    top: 50%;
+
+    transform: translateY(-50%) rotate(-12deg);
+
+    font-size: 150px;
+
+    opacity: 0.4;
+
+    pointer-events: none;
+}
+
+
+/* Content above leaves */
+
+#about h2,
+#about p,
+#about img {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ================================
+   SKILLS SECTION
+================================ */
+
+#skills {
+    position: relative;
+    overflow: hidden;
+
+    background-color: #f8fafc;
+
+    text-align: center;
+}
+
+#skills h2 {
+    color: #1e3a8a;
+
+    font-size: 2rem;
+
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+#skills li {
+    background-color: white;
+
+    color: #1e3a8a;
+
+    padding: 18px 30px;
+
+    border-radius: 12px;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
+}
+
+
+/* Skill Hover Effect */
+
+#skills li:hover {
+    background-color: #d94f4f;
+
+    color: white;
+
+    transform:
+        translateY(-8px)
+        scale(1.05);
+
+    box-shadow:
+        0 8px 18px rgba(217, 79, 79, 0.35);
+}
+
+
+/* Computer Background Icon */
+
+#skills::before {
+    content: "🖥️";
+
+    position: absolute;
+
+    right: 5%;
+    top: 50%;
+
+    transform:
+        translateY(-50%)
+        rotate(-8deg);
+
+    font-size: 220px;
+
+    opacity: 0.18;
+
+    pointer-events: none;
+}
+
+
+/* Content above computer icon */
+
+#skills h2,
+#skills ul {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+#contact {
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #d94f4f,
+        #98d8c8,
+        #7f8f3f
+    );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* Telephone Background Icon */
+
+#contact::before {
+    content: "☎";
+
+    position: absolute;
+
+    right: 5%;
+    top: 50%;
+
+    transform:
+        translateY(-50%)
+        rotate(-15deg);
+
+    font-size: 260px;
+
+    color: white;
+
+    opacity: 0.85;
+
+    text-shadow:
+        4px 4px 0 #d94f4f,
+        8px 8px 0 #7f8f3f;
+
+    pointer-events: none;
+}
+
+
+/* Contact Form */
+
+#contact form {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+#contact textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* Send Button */
+
+#contact button {
+    background-color: #d94f4f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #b83232;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #0f172a;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        padding: 40px 20px;
+
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* About Section */
+
+    #about {
+        padding: 40px 20px;
+
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about img {
+        width: 160px;
+
+        max-width: 100%;
+
+        height: auto;
+    }
+
+    #about p {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* Skills Section */
+
+    #skills {
+        padding: 40px 20px;
+    }
+
+    #skills h2 {
+        font-size: 1.8rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    #skills li {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    /* Contact Section */
+
+    #contact {
+        padding: 40px 20px;
+    }
+
+    #contact h2 {
+        font-size: 1.8rem;
+
+        margin-bottom: 25px;
+    }
+
+    #contact form {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 100%;
+    }
+
+    #contact button {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+
+    /* Smaller Background Icons */
+
+    #contact::before {
+        font-size: 140px;
+
+        right: -20px;
+    }
+
+    #skills::before {
+        font-size: 120px;
+
+        right: -20px;
+    }
+
+    #about::before {
+        font-size: 80px;
+
+        right: -10px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+}
