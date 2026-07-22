@@ -14,7 +14,10 @@
 
     <div class="universe">
 
-        <!-- Header Section -->
+        <!-- ================================
+             HEADER SECTION
+        ================================= -->
+
         <header class="hero">
 
             <h1>Govind Jadoun</h1>
@@ -32,17 +35,26 @@
         </header>
 
 
-        <!-- Main Section -->
+        <!-- ================================
+             MAIN CONTENT
+        ================================= -->
+
         <main>
 
-            <!-- About Section -->
+            <!-- ================================
+                 ABOUT SECTION
+            ================================= -->
+
             <section id="about">
 
                 <h2>About Me</h2>
 
-                <img src="images/profile.jpg"
-                     alt="Profile Photo"
-                     width="160">
+                <img
+                    src="images/profile.jpg"
+                    alt="Govind Jadoun Profile Photo"
+                    width="160"
+                    height="160"
+                >
 
                 <p>
                     Hello, I am Govind Jadoun. I am a B.Tech Computer Science Engineering
@@ -51,61 +63,96 @@
 
                 <p>
                     I am passionate about improving my programming skills and building
-                    websites. My goal is to become a Java Full Stack Developer.
+                    responsive websites. My goal is to become a Java Full Stack Developer.
                 </p>
 
             </section>
 
 
-            <!-- Skills Section -->
+            <!-- ================================
+                 SKILLS SECTION
+            ================================= -->
+
             <section id="skills">
 
                 <h2>My Skills</h2>
 
                 <ul>
+
                     <li>HTML</li>
+
                     <li>CSS</li>
+
                     <li>Java</li>
+
                     <li>JavaScript</li>
+
                     <li>Git & GitHub</li>
+
                 </ul>
 
             </section>
 
 
-            <!-- Contact Section -->
+            <!-- ================================
+                 CONTACT SECTION
+            ================================= -->
+
             <section id="contact">
 
                 <h2>Contact Me</h2>
 
                 <form>
 
-                    <label>Name</label>
+                    <label for="name">
+                        Name
+                    </label>
+
                     <br>
 
-                    <input type="text"
-                           placeholder="Enter your name"
-                           required>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
 
                     <br><br>
 
-                    <label>Email</label>
+
+                    <label for="email">
+                        Email
+                    </label>
+
                     <br>
 
-                    <input type="email"
-                           placeholder="Enter your email"
-                           required>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
 
                     <br><br>
 
-                    <label>Message</label>
+
+                    <label for="message">
+                        Message
+                    </label>
+
                     <br>
 
                     <textarea
+                        id="message"
+                        name="message"
                         placeholder="Write your message"
-                        required></textarea>
+                        required
+                    ></textarea>
 
                     <br><br>
+
 
                     <button type="submit">
                         Send Message
@@ -118,7 +165,10 @@
         </main>
 
 
-        <!-- Footer Section -->
+        <!-- ================================
+             FOOTER SECTION
+        ================================= -->
+
         <footer>
 
             <p>
@@ -130,17 +180,23 @@
     </div>
 
 
-    <!-- Contact Form JavaScript -->
+    <!-- ================================
+         CONTACT FORM JAVASCRIPT
+    ================================= -->
+
     <script>
 
         const contactForm = document.querySelector("#contact form");
+
         const sendButton = contactForm.querySelector("button");
+
 
         contactForm.addEventListener("submit", function (event) {
 
             event.preventDefault();
 
             sendButton.style.backgroundColor = "#22c55e";
+
             sendButton.textContent = "Message Sent ✓";
 
         });
