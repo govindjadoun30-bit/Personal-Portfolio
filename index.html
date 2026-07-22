@@ -1,207 +1,213 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Govind Jadoun | Portfolio</title>
+```
+<title>Govind Jadoun | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-    <div class="universe">
+```
+<div class="universe">
 
-        <!-- ================================
-             HEADER SECTION
-        ================================= -->
+    <!-- ================================
+         HEADER SECTION
+    ================================= -->
 
-        <header class="hero">
+    <header class="hero">
 
-            <h1>Govind Jadoun</h1>
+        <h1>Govind Jadoun</h1>
 
-            <h2>Web Development Intern</h2>
+        <h2>Web Development Intern</h2>
 
-            <p>
-                B.Tech CSE Student | Java Full Stack Developer Aspirant
-            </p>
+        <p>
+            B.Tech CSE Student | Java Full Stack Developer Aspirant
+        </p>
 
-            <a href="#contact" class="btn">
-                Contact Me
-            </a>
+        <a href="#contact" class="btn">
+            Contact Me
+        </a>
 
-        </header>
-
-
-        <!-- ================================
-             MAIN CONTENT
-        ================================= -->
-
-        <main>
-
-            <!-- ================================
-                 ABOUT SECTION
-            ================================= -->
-
-            <section id="about">
-
-                <h2>About Me</h2>
-
-                <img
-                    <img src="./images/profile.jpg" alt="Govind Jadoun Profile Photo">
-                    alt="Govind Jadoun Profile Photo"
-                    width="160"
-                    height="160"
-                >
-
-                <p>
-                    Hello, I am Govind Jadoun. I am a B.Tech Computer Science Engineering
-                    student. I am learning Web Development and Java Full Stack Development.
-                </p>
-
-                <p>
-                    I am passionate about improving my programming skills and building
-                    responsive websites. My goal is to become a Java Full Stack Developer.
-                </p>
-
-            </section>
-
-
-            <!-- ================================
-                 SKILLS SECTION
-            ================================= -->
-
-            <section id="skills">
-
-                <h2>My Skills</h2>
-
-                <ul>
-
-                    <li>HTML</li>
-
-                    <li>CSS</li>
-
-                    <li>Java</li>
-
-                    <li>JavaScript</li>
-
-                    <li>Git & GitHub</li>
-
-                </ul>
-
-            </section>
-
-
-            <!-- ================================
-                 CONTACT SECTION
-            ================================= -->
-
-            <section id="contact">
-
-                <h2>Contact Me</h2>
-
-                <form>
-
-                    <label for="name">
-                        Name
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                    >
-
-                    <br><br>
-
-
-                    <label for="email">
-                        Email
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                    <br><br>
-
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <br>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Write your message"
-                        required
-                    ></textarea>
-
-                    <br><br>
-
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </section>
-
-        </main>
-
-
-        <!-- ================================
-             FOOTER SECTION
-        ================================= -->
-
-        <footer>
-
-            <p>
-                © 2026 Govind Jadoun | All Rights Reserved
-            </p>
-
-        </footer>
-
-    </div>
+    </header>
 
 
     <!-- ================================
-         CONTACT FORM JAVASCRIPT
+         MAIN CONTENT
     ================================= -->
 
-    <script>
+    <main>
 
-        const contactForm = document.querySelector("#contact form");
+        <!-- ================================
+             ABOUT SECTION
+        ================================= -->
 
-        const sendButton = contactForm.querySelector("button");
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <img
+                src="images/profile.jpg"
+                alt="Govind Jadoun Profile Photo"
+                width="160"
+                height="160"
+            >
+
+            <p>
+                Hello, I am Govind Jadoun. I am a B.Tech Computer Science Engineering
+                student. I am learning Web Development and Java Full Stack Development.
+            </p>
+
+            <p>
+                I am passionate about improving my programming skills and building
+                responsive websites. My goal is to become a Java Full Stack Developer.
+            </p>
+
+        </section>
 
 
-        contactForm.addEventListener("submit", function (event) {
+        <!-- ================================
+             SKILLS SECTION
+        ================================= -->
 
-            event.preventDefault();
+        <section id="skills">
 
-            sendButton.style.backgroundColor = "#22c55e";
+            <h2>My Skills</h2>
 
-            sendButton.textContent = "Message Sent ✓";
+            <ul>
 
-        });
+                <li>HTML</li>
 
-    </script>
+                <li>CSS</li>
+
+                <li>Java</li>
+
+                <li>JavaScript</li>
+
+                <li>Git & GitHub</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================================
+             CONTACT SECTION
+        ================================= -->
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+
+                <br><br>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER SECTION
+    ================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Govind Jadoun | All Rights Reserved
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- ================================
+     CONTACT FORM JAVASCRIPT
+================================= -->
+
+<script>
+
+    const contactForm = document.querySelector("#contact form");
+
+    const sendButton = contactForm.querySelector("button");
+
+
+    contactForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        sendButton.style.backgroundColor = "#22c55e";
+
+        sendButton.textContent = "Message Sent ✓";
+
+    });
+
+</script>
+```
 
 </body>
 
