@@ -1,165 +1,48 @@
 # Personal Portfolio Website
 
-## Project Overview
+## 📌 Project Overview
 
-This project is a responsive personal portfolio website created using HTML, CSS, and JavaScript.
+This project is a responsive Personal Portfolio Website developed using HTML, CSS, and JavaScript.
 
-The website introduces me as a B.Tech Computer Science Engineering student and Web Development Intern. It showcases my skills, personal information, career goal, and contact form in a clean and visually appealing design.
+The website introduces me as a B.Tech Computer Science Engineering student and Web Development Intern. It showcases my personal information, technical skills, and a contact form with interactive JavaScript features.
 
-The main objective of this project is to practice and implement CSS concepts such as colors, gradients, Flexbox, hover effects, transitions, pseudo-elements, and responsive design.
-
----
-
-## Features
-
-* Personal introduction section
-* Profile photo
-* About Me section
-* Skills section
-* Interactive hover effects on skill cards
-* Contact form
-* HTML form validation
-* Message sent button interaction using JavaScript
-* Gradient backgrounds
-* Decorative background icons
-* CSS transitions
-* Responsive design for mobile screens
-* Clean and organized layout
+The main objective of this project is to practice front-end web development by implementing responsive design, DOM manipulation, event handling, and form validation.
 
 ---
 
-## Technologies Used
+## 🚀 Features
 
-* HTML5
-* CSS3
-* JavaScript
-* CSS Flexbox
-* CSS Media Queries
-
----
-
-## CSS Concepts Used
-
-The following CSS concepts were implemented in this project:
-
-* CSS Reset
-* CSS Variables
-* Element Selectors
-* ID Selectors
-* Class Selectors
-* Box Model
-* Margin and Padding
-* Colors
-* Linear Gradients
-* Border Radius
-* Box Shadows
-* CSS Transitions
-* Hover Effects
-* Pseudo-elements using `::before`
-* Flexbox
-* Media Queries
-* Responsive Design
+- Responsive Portfolio Website
+- Attractive Hero Section
+- About Me Section
+- Skills Section
+- Contact Form
+- Contact Form Validation
+- Dark / Light Mode Toggle
+- Local Storage Support
+- Show / Hide About Section
+- Interactive Buttons
+- Smooth Scrolling
+- Responsive Design for Mobile and Desktop
 
 ---
 
-## Design Features
+## 💻 Technologies Used
 
-### Header Section
-
-The header uses a multi-color linear gradient background and contains:
-
-* Name
-* Professional role
-* Career goal
-* Contact button
-
-The Contact Me button includes a hover effect that changes its color and position.
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
 ---
 
-### About Section
-
-The About section includes:
-
-* Profile photo
-* Personal introduction
-* Career goal
-* Decorative leaf elements
-
-The profile image has rounded corners while maintaining a square shape.
-
----
-
-### Skills Section
-
-The Skills section displays the following skills:
-
-* HTML
-* CSS
-* Java
-* JavaScript
-* Git & GitHub
-
-The skill cards use CSS Flexbox and include interactive hover effects.
-
-When the user moves the mouse over a skill card:
-
-* The background color changes
-* The text color changes
-* The card moves slightly upward
-* The card slightly increases in size
-
----
-
-### Contact Section
-
-The Contact section includes:
-
-* Name input
-* Email input
-* Message textarea
-* Send Message button
-
-The section also includes a telephone icon as a decorative background element.
-
-After submitting the form, the button changes to:
-
-`Message Sent ✓`
-
-and its background color changes to green using JavaScript.
-
----
-
-## Responsive Design
-
-The website is responsive and designed to work on different screen sizes.
-
-A CSS media query is used for screens with a maximum width of 768px.
-
-```css
-@media (max-width: 768px) {
-    /* Mobile responsive styles */
-}
-```
-
-The responsive design adjusts:
-
-* Header text size
-* Section spacing
-* Skills layout
-* Form width
-* Background decorative icons
-* Footer text size
-
----
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 Personal-Portfolio/
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── README.md
 │
 ├── images/
@@ -167,51 +50,108 @@ Personal-Portfolio/
 │
 └── screenshots/
     ├── home-page.png
+    ├── dark-mode.png
     ├── about-section.png
-    ├── skills-section.png
-    ├── contact-section.png
-    ├── navigation-working.png
-    ├── form-working.png
-    ├── form-validation.png
-    └── external-links.png
+    ├── contact-form.png
+    └── form-validation.png
 ```
 
 ---
 
-## JavaScript Functionality
+## ⚙️ JavaScript Features
 
-JavaScript is used to handle the contact form interaction.
+### DOM Manipulation
 
-When the user submits the form:
+- Select HTML elements
+- Update page content dynamically
 
-* The default form submission is prevented.
-* The button background color changes to green.
-* The button text changes to `Message Sent ✓`.
+### Event Handling
 
-This demonstrates basic DOM manipulation and event handling using JavaScript.
+- Button Click Event
+- Form Submit Event
+- Dark Mode Toggle Event
 
----
+### Form Validation
 
-## Learning Outcomes
+- Name validation
+- Email validation
+- Message validation
+- Success and error messages
 
-Through this project, I practiced:
+### Local Storage
 
-* Creating a complete webpage using HTML5
-* Styling webpages using CSS3
-* Using CSS Flexbox for layout
-* Creating gradients and visual effects
-* Implementing hover effects and transitions
-* Using pseudo-elements for decorative design
-* Creating responsive layouts using media queries
-* Adding basic JavaScript interaction
-* Using GitHub for project documentation and version control
+- Saves Dark Mode preference
+- Automatically loads saved theme
 
 ---
 
-## Author
+## 🧪 Testing
+
+The following functionality has been tested successfully:
+
+- Contact Button
+- Dark Mode Toggle
+- Local Storage
+- About Section Toggle
+- Contact Form Validation
+- Responsive Layout
+
+---
+
+## 📸 Screenshots
+
+The following screenshots are included in the **screenshots** folder:
+
+- Home Page
+- About Section
+- Skills Section
+- Dark Mode
+- Contact Form
+- Form Validation
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone or download this repository.
+2. Open the project folder.
+3. Open `index.html` in any modern web browser.
+
+---
+
+## 📈 Future Improvements
+
+- Add Project Section
+- Add Resume Download
+- Add More Animations
+- Add Social Media Links
+- Backend Integration
+- Email Sending Feature
+
+---
+
+## 👨‍💻 Author
 
 **Govind Jadoun**
 
-B.Tech Computer Science Engineering Student
-Web Development Intern
-Aspiring Java Full Stack Developer
+- B.Tech Computer Science Engineering Student
+- Web Development Intern
+- Java Full Stack Developer Aspirant
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/GovindJadoun30-bit/Personal-Portfolio
+
+---
+
+## 🌐 Live Demo
+
+https://govindjadoun30-bit.github.io/Personal-Portfolio/
+
+---
+
+## 📄 License
+
+This project is created for educational and learning purposes.
