@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* ================================
    COLOR SCHEME
 ================================ */
@@ -22,7 +21,6 @@
     --white-color: #ffffff;
 }
 
-
 /* ================================
    GENERAL STYLES
 ================================ */
@@ -31,12 +29,13 @@ body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
+    background: var(--light-color);
+    transition: 0.3s ease;
 }
 
 section {
     padding: 60px 20px;
 }
-
 
 /* ================================
    HEADER SECTION
@@ -69,34 +68,85 @@ header p {
     margin-bottom: 25px;
 }
 
-
 /* ================================
-   CONTACT BUTTON
+   BUTTONS
 ================================ */
 
-.btn {
-    display: inline-block;
+.btn,
+#themeBtn,
+#aboutBtn,
+#contact button {
 
-    background-color: white;
-    color: #1e3a8a;
+    display: inline-block;
 
     padding: 12px 25px;
 
-    text-decoration: none;
+    border: none;
+
     border-radius: 8px;
+
+    cursor: pointer;
 
     font-weight: bold;
 
     transition: 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #ef4444;
-    color: white;
-    transform: translateY(-3px);
+.btn {
+
+    background: white;
+
+    color: #1e3a8a;
+
+    text-decoration: none;
+
 }
 
+.btn:hover {
 
+    background: #ef4444;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+#themeBtn {
+
+    background: #0f172a;
+
+    color: white;
+
+    margin-left: 15px;
+
+}
+
+#themeBtn:hover {
+
+    background: #2563eb;
+
+}
+
+#aboutBtn {
+
+    display: block;
+
+    margin: 35px auto;
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+#aboutBtn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+
+}
 /* ================================
    ABOUT SECTION
 ================================ */
@@ -104,14 +154,11 @@ header p {
 #about {
     position: relative;
     overflow: hidden;
-
     background: linear-gradient(
         rgba(168, 213, 162, 0.55),
         rgba(197, 223, 185, 0.55)
     );
-
     color: #1f3d2b;
-
     text-align: center;
 }
 
@@ -121,14 +168,10 @@ header p {
 
 #about img {
     display: block;
-
     width: 160px;
     height: 160px;
-
     object-fit: cover;
-
     border-radius: 20px;
-
     margin: 0 auto 25px;
 }
 
@@ -137,28 +180,16 @@ header p {
     margin: 0 auto 15px;
 }
 
-
-/* Leaves in background */
-
 #about::before {
     content: "🍃 🌿 🍃 🌿 🍃";
-
     position: absolute;
-
     right: 3%;
     top: 50%;
-
     transform: translateY(-50%) rotate(-12deg);
-
     font-size: 150px;
-
     opacity: 0.4;
-
     pointer-events: none;
 }
-
-
-/* Content above leaves */
 
 #about h2,
 #about p,
@@ -167,7 +198,6 @@ header p {
     z-index: 1;
 }
 
-
 /* ================================
    SKILLS SECTION
 ================================ */
@@ -175,99 +205,57 @@ header p {
 #skills {
     position: relative;
     overflow: hidden;
-
-    background-color: #f8fafc;
-
+    background: #f8fafc;
     text-align: center;
 }
 
 #skills h2 {
     color: #1e3a8a;
-
     font-size: 2rem;
-
     margin-bottom: 30px;
 }
 
 #skills ul {
     list-style: none;
-
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
     gap: 20px;
 }
 
 #skills li {
-    background-color: white;
-
+    background: white;
     color: #1e3a8a;
-
     padding: 18px 30px;
-
     border-radius: 12px;
-
     font-size: 1.1rem;
-
     font-weight: 600;
-
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.1);
-
-    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    transition: .3s;
 }
-
-
-/* Skill Hover Effect */
 
 #skills li:hover {
-    background-color: #d94f4f;
-
+    background: #d94f4f;
     color: white;
-
-    transform:
-        translateY(-8px)
-        scale(1.05);
-
-    box-shadow:
-        0 8px 18px rgba(217, 79, 79, 0.35);
+    transform: translateY(-8px) scale(1.05);
 }
-
-
-/* Computer Background Icon */
 
 #skills::before {
     content: "🖥️";
-
     position: absolute;
-
     right: 5%;
     top: 50%;
-
-    transform:
-        translateY(-50%)
-        rotate(-8deg);
-
+    transform: translateY(-50%) rotate(-8deg);
     font-size: 220px;
-
-    opacity: 0.18;
-
+    opacity: .18;
     pointer-events: none;
 }
-
-
-/* Content above computer icon */
 
 #skills h2,
 #skills ul {
     position: relative;
-
     z-index: 1;
 }
-
 
 /* ================================
    CONTACT SECTION
@@ -275,262 +263,298 @@ header p {
 
 #contact {
     position: relative;
-
     overflow: hidden;
-
     background: linear-gradient(
         135deg,
         #d94f4f,
         #98d8c8,
         #7f8f3f
     );
-
     color: white;
-
     text-align: center;
 }
 
-
-/* Telephone Background Icon */
-
 #contact::before {
     content: "☎";
-
     position: absolute;
-
     right: 5%;
     top: 50%;
-
-    transform:
-        translateY(-50%)
-        rotate(-15deg);
-
+    transform: translateY(-50%) rotate(-15deg);
     font-size: 260px;
-
-    color: white;
-
-    opacity: 0.85;
-
-    text-shadow:
-        4px 4px 0 #d94f4f,
-        8px 8px 0 #7f8f3f;
-
+    opacity: .85;
     pointer-events: none;
 }
 
-
-/* Contact Form */
-
 #contact form {
     position: relative;
-
     z-index: 1;
-
     max-width: 500px;
-
     margin: auto;
 }
 
 #contact input,
 #contact textarea {
     width: 100%;
-
     padding: 12px;
-
     border: none;
-
     border-radius: 8px;
-
     font-size: 1rem;
 }
 
 #contact textarea {
     min-height: 120px;
-
     resize: vertical;
 }
 
-
-/* Send Button */
-
 #contact button {
-    background-color: #d94f4f;
-
+    background: #d94f4f;
     color: white;
-
-    border: none;
-
-    padding: 12px 25px;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
 }
 
 #contact button:hover {
-    background-color: #b83232;
-
+    background: #b83232;
     transform: translateY(-2px);
 }
 
-
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
 /* ================================
    FOOTER
 ================================ */
 
 footer {
-    background-color: #0f172a;
-
+    background: #0f172a;
     color: white;
-
-    padding: 20px;
-
     text-align: center;
+    padding: 20px;
 }
-
 
 /* ================================
    RESPONSIVE DESIGN
 ================================ */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    /* Header */
-
-    header {
-        padding: 40px 20px;
-
-        text-align: center;
+    header{
+        padding:40px 20px;
     }
 
-    header h1 {
-        font-size: 2rem;
+    header h1{
+        font-size:2rem;
     }
 
-    header h2 {
-        font-size: 1.3rem;
+    header h2{
+        font-size:1.3rem;
     }
 
-    header p {
-        font-size: 1rem;
-
-        line-height: 1.6;
+    header p{
+        font-size:1rem;
     }
 
-
-    /* About Section */
-
-    #about {
-        padding: 40px 20px;
-
-        text-align: center;
+    .btn,
+    #themeBtn{
+        display:block;
+        width:220px;
+        margin:15px auto;
     }
 
-    #about h2 {
-        font-size: 1.8rem;
+    #about{
+        padding:40px 20px;
     }
 
-    #about img {
-        width: 160px;
-
-        max-width: 100%;
-
-        height: auto;
+    #about img{
+        width:150px;
+        height:150px;
     }
 
-    #about p {
-        font-size: 1rem;
-
-        line-height: 1.7;
+    #about::before{
+        font-size:80px;
+        right:-10px;
     }
 
-
-    /* Skills Section */
-
-    #skills {
-        padding: 40px 20px;
+    #skills{
+        padding:40px 20px;
     }
 
-    #skills h2 {
-        font-size: 1.8rem;
+    #skills ul{
+        flex-direction:column;
+        align-items:center;
     }
 
-    #skills ul {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 15px;
+    #skills li{
+        width:100%;
+        max-width:300px;
     }
 
-    #skills li {
-        width: 100%;
-
-        max-width: 300px;
+    #skills::before{
+        font-size:120px;
+        right:-20px;
     }
 
-
-    /* Contact Section */
-
-    #contact {
-        padding: 40px 20px;
+    #contact{
+        padding:40px 20px;
     }
 
-    #contact h2 {
-        font-size: 1.8rem;
-
-        margin-bottom: 25px;
+    #contact form{
+        width:100%;
+        max-width:400px;
     }
 
-    #contact form {
-        width: 100%;
-
-        max-width: 400px;
+    #contact::before{
+        font-size:140px;
+        right:-20px;
     }
 
-    #contact input,
-    #contact textarea {
-        width: 100%;
+    #contact button{
+        width:100%;
     }
 
-    #contact button {
-        width: 100%;
+}
 
-        max-width: 250px;
-    }
+/* ================================
+   DARK MODE
+================================ */
 
+.dark-mode{
 
-    /* Smaller Background Icons */
+    background:#121212;
+    color:white;
 
-    #contact::before {
-        font-size: 140px;
+}
 
-        right: -20px;
-    }
+.dark-mode header{
 
-    #skills::before {
-        font-size: 120px;
+    background:linear-gradient(
+        135deg,
+        #111827,
+        #1f2937,
+        #374151
+    );
 
-        right: -20px;
-    }
+}
 
-    #about::before {
-        font-size: 80px;
+.dark-mode section{
 
-        right: -10px;
-    }
+    background:#1f1f1f;
+    color:white;
 
+}
 
-    /* Footer */
+.dark-mode footer{
 
-    footer {
-        padding: 20px 15px;
-    }
+    background:#000;
+    color:white;
 
-    footer p {
-        font-size: 0.9rem;
-    }
+}
+
+.dark-mode #about{
+
+    background:#1f1f1f;
+    color:white;
+
+}
+
+.dark-mode #skills{
+
+    background:#202020;
+
+}
+
+.dark-mode #skills li{
+
+    background:#333;
+    color:white;
+
+}
+
+.dark-mode #contact{
+
+    background:#2a2a2a;
+
+}
+
+.dark-mode input,
+.dark-mode textarea{
+
+    background:#333;
+    color:white;
+    border:1px solid #777;
+
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder{
+
+    color:#d1d5db;
+
+}
+
+.dark-mode .btn{
+
+    background:white;
+    color:#2563eb;
+
+}
+
+.dark-mode .btn:hover{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+.dark-mode #themeBtn{
+
+    background:#facc15;
+    color:black;
+
+}
+
+.dark-mode #aboutBtn{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+.dark-mode #contact button{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+.dark-mode #contact button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ================================
+   SMOOTH SCROLL
+================================ */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ================================
+   TRANSITIONS
+================================ */
+
+header,
+section,
+footer,
+button,
+input,
+textarea,
+.btn{
+
+    transition:.3s ease;
 
 }
